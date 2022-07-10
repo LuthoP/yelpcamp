@@ -1,0 +1,57 @@
+* {box-sizing: border-box;}
+body {
+  margin: 0;
+  background-color: #F9F6F1;
+}
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 5% 0 8% 0;
+}
+.mobile-heroImage {display: none;}
+.left-side {
+  font-family: 'Archivo';
+  max-width: 35%;
+  margin: 0 auto;
+}
+.left-side h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.left-side p {
+  color: #5C5855;
+  font-weight: 600;
+}
+.checkmark {display: flex;}
+.checkmark img {padding-right: 10px;}
+.viewCampgrounds-Btn {
+  text-decoration: none;
+  color: #F9F6F1;
+  padding: 15px;
+  background-color: black;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.partner-logo {
+  display: flex;
+}
+.right-side img{
+  height: 695px;
+}
+
+@media screen and (max-width: 992px) {
+  .landing-page {
+    flex-direction: column;
+  }
+  .mobile-heroImage {display: block;}
+  .left-side {max-width: 90%;}
+  .right-side {display: none;}
+  .mobile-heroImage img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
+  }
+}
